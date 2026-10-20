@@ -3,3 +3,6 @@ venv/
 .env
 __pycache__/
 *.py[cod]
+# Throwaway overlay used when debugging package builds locally; see
+# builder/docs/local-debugging.md
+builder/Dockerfile.debug

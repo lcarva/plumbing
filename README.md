@@ -15,6 +15,10 @@ The [builder](./builder) directory contains everything needed to build a contain
 - Handle CA trust configuration for enterprise environments
 - Output both wheels and source distributions
 
+When an onboarding build fails because something is missing from the build root, iterate
+on the builder image locally as an overlay instead of rebuilding it from scratch — see
+[builder/docs/local-debugging.md](./builder/docs/local-debugging.md).
+
 ### npm Builder Image
 
 The [npm-builder](./npm-builder) directory contains the factory image for npm Trusted Libraries onboarding:
